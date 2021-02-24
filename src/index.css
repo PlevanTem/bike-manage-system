@@ -1,10 +1,14 @@
+@import '~antd/dist/antd.css';
+@import '~antd/dist/antd.dark.css';
+@import '~antd/dist/antd.compact.css';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; /*使页面上的字体抗锯齿,使用后字体看起来会更清晰*/
+  -moz-osx-font-smoothing: grayscale; /*用灰度抗锯齿渲染文本，而不是子像素。从亚像素渲染切换到黑暗背景上的浅色文本的抗锯齿使其看起来更轻。*/
 }
 
 code {

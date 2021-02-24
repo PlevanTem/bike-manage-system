@@ -1,0 +1,19 @@
+/*less是预编译器，比css好的地方在于可以实现变量嵌套*/
+@import './default.less';
+
+.container {
+    display: flex;
+    .nav-left{
+        color: white;
+        /*vh视口的初始包含块的高度的1%calc()用于动态长度计算*/
+        height: calc(100vh);
+        background-color: #001529;
+    }
+    .main{
+        background-color: @colorL;
+    }
+    .content{
+        position: relative;
+        padding: 20px;
+    }
+}
